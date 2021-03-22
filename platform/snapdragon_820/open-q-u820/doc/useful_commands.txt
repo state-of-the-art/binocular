@@ -1,0 +1,221 @@
+* Wakeup & unlock:
+   $ input keyevent 224 && sleep 1 && input touchscreen swipe 459 800 413 472
+* Shutdown on menu
+   $ input tap 400 200
+
+* Unbind i2c-12 blsp-12:
+  # echo 75ba000.i2c > /sys/bus/i2c/devices/i2c-12/device/driver/unbind
+
+* GPIO debug list:
+  # cat /sys/kernel/debug/gpio
+    GPIOs 0-149, platform/1010000.pinctrl, 1010000.pinctrl:
+     gpio0   : in  0 2mA pull down
+     gpio1   : in  0 2mA pull down
+     gpio2   : in  0 2mA pull down
+     gpio3   : in  0 2mA pull down
+     gpio4   : out 2 2mA no pull
+     gpio5   : out 2 2mA no pull
+     gpio6   : in  0 2mA pull up
+     gpio7   : in  0 2mA pull up
+     gpio8   : out 0 8mA no pull
+     gpio9   : in  0 2mA pull down
+     gpio10  : in  1 2mA pull down
+     gpio11  : in  0 2mA pull down
+     gpio12  : in  0 2mA pull down
+     gpio13  : in  1 8mA pull down
+     gpio14  : in  1 8mA pull down
+     gpio15  : in  1 8mA pull down
+     gpio16  : in  0 2mA pull down
+     gpio17  : in  1 2mA pull down
+     gpio18  : in  1 2mA pull down
+     gpio19  : in  1 2mA pull down
+     gpio20  : in  1 2mA pull down
+     gpio21  : in  0 2mA pull down
+     gpio22  : in  0 2mA pull down
+     gpio23  : out 0 2mA no pull
+     gpio24  : in  0 2mA pull down
+     gpio25  : out 0 2mA no pull
+     gpio26  : out 0 2mA no pull
+     gpio27  : in  0 2mA pull up
+     gpio28  : in  0 2mA pull up
+     gpio29  : in  0 2mA pull down
+     gpio30  : in  0 2mA pull down
+     gpio31  : in  1 2mA pull up
+     gpio32  : in  1 2mA pull up
+     gpio33  : in  1 2mA pull up
+     gpio34  : in  1 16mA pull down
+     gpio35  : out 0 2mA pull down
+     gpio36  : in  1 2mA pull up
+     gpio37  : in  0 2mA pull up
+     gpio38  : in  0 2mA pull up
+     gpio39  : in  0 2mA pull down
+     gpio40  : in  0 2mA pull down
+     gpio41  : in  0 2mA no pull
+     gpio42  : in  0 2mA no pull
+     gpio43  : in  0 2mA no pull
+     gpio44  : in  0 2mA no pull
+     gpio45  : out 0 2mA no pull
+     gpio46  : out 0 2mA no pull
+     gpio47  : in  0 2mA pull down
+     gpio48  : in  0 2mA pull down
+     gpio49  : in  0 2mA pull down
+     gpio50  : in  0 2mA pull down
+     gpio51  : in  0 2mA pull down
+     gpio52  : in  0 2mA pull down
+     gpio53  : in  0 2mA pull down
+     gpio54  : in  0 2mA pull down
+     gpio55  : in  0 2mA pull up
+     gpio56  : in  0 2mA pull up
+     gpio57  : in  0 2mA pull down
+     gpio58  : in  0 2mA pull down
+     gpio59  : in  0 2mA pull down
+     gpio60  : in  0 2mA pull down
+     gpio61  : in  0 2mA pull down
+     gpio62  : in  0 2mA pull down
+     gpio63  : in  0 2mA pull down
+     gpio64  : out 0 16mA pull down
+     gpio65  : out 1 2mA pull down
+     gpio66  : out 1 2mA pull down
+     gpio67  : in  1 2mA pull down
+     gpio68  : in  1 2mA pull down
+     gpio69  : in  1 2mA pull down
+     gpio70  : in  1 8mA keeper
+     gpio71  : in  1 8mA keeper
+     gpio72  : in  1 8mA keeper
+     gpio73  : in  0 2mA pull down
+     gpio74  : in  0 2mA pull down
+     gpio75  : out 1 2mA pull down
+     gpio76  : out 1 2mA pull down
+     gpio77  : in  1 2mA pull down
+     gpio78  : in  0 2mA pull down
+     gpio79  : in  0 2mA pull down
+     gpio80  : out 0 2mA no pull
+     gpio81  : in  0 2mA pull down
+     gpio82  : in  0 2mA pull down
+     gpio83  : in  0 2mA pull down
+     gpio84  : in  0 2mA pull down
+     gpio85  : in  0 2mA pull down
+     gpio86  : in  0 2mA pull down
+     gpio87  : in  3 2mA pull down
+     gpio88  : in  3 2mA pull down
+     gpio89  : in  0 16mA pull up
+     gpio90  : in  0 2mA pull down
+     gpio91  : in  0 2mA pull down
+     gpio92  : in  0 2mA pull down
+     gpio93  : in  0 2mA pull down
+     gpio94  : out 0 2mA no pull
+     gpio95  : in  0 2mA pull down
+     gpio96  : in  0 2mA pull down
+     gpio97  : in  0 2mA pull down
+     gpio98  : out 0 2mA no pull
+     gpio99  : in  0 2mA pull down
+     gpio100 : in  0 2mA pull down
+     gpio101 : in  0 2mA pull down
+     gpio102 : in  0 2mA pull down
+     gpio103 : in  0 2mA pull down
+     gpio104 : out 0 2mA no pull
+     gpio105 : in  0 2mA pull down
+     gpio106 : in  0 2mA pull down
+     gpio107 : in  0 2mA pull down
+     gpio108 : in  0 2mA pull down
+     gpio109 : in  0 2mA pull down
+     gpio110 : in  0 2mA pull down
+     gpio111 : in  0 2mA pull down
+     gpio112 : in  0 2mA pull down
+     gpio113 : in  0 2mA pull down
+     gpio114 : out 0 2mA pull down
+     gpio115 : in  2 2mA pull up
+     gpio116 : in  0 2mA pull down
+     gpio117 : in  0 2mA pull down
+     gpio118 : in  0 2mA pull down
+     gpio119 : in  0 2mA pull down
+     gpio120 : in  0 2mA pull down
+     gpio121 : in  0 2mA pull down
+     gpio122 : in  0 2mA pull down
+     gpio123 : in  0 2mA pull down
+     gpio124 : in  0 2mA pull down
+     gpio125 : in  0 16mA no pull
+     gpio126 : in  0 2mA pull down
+     gpio127 : in  0 2mA pull down
+     gpio128 : in  0 2mA pull down
+     gpio129 : out 0 2mA no pull
+     gpio130 : out 0 2mA pull down
+     gpio131 : in  1 2mA pull up
+     gpio132 : in  0 2mA pull down
+     gpio133 : out 0 2mA no pull
+     gpio134 : in  0 2mA pull down
+     gpio135 : out 0 8mA no pull
+     gpio136 : in  0 2mA pull down
+     gpio137 : in  0 2mA pull down
+     gpio138 : in  0 2mA pull down
+     gpio139 : in  0 2mA pull down
+     gpio140 : in  2 2mA no pull
+     gpio141 : in  0 2mA pull down
+     gpio142 : in  0 2mA pull down
+     gpio143 : in  0 2mA pull down
+     gpio144 : in  0 2mA pull down
+     gpio145 : in  0 2mA pull down
+     gpio146 : in  0 2mA pull down
+     gpio147 : in  0 2mA pull down
+     gpio148 : in  0 2mA pull down
+     gpio149 : in  0 2mA pull down
+    GPIOs 391-422, platform/soc:qcom,smp2pgpio-rdbg-1-out, rdbg:
+
+    GPIOs 423-454, platform/soc:qcom,smp2pgpio-rdbg-1-in, rdbg:
+
+    GPIOs 455-486, platform/soc:qcom,smp2pgpio-rdbg-2-out, rdbg:
+
+    GPIOs 487-518, platform/soc:qcom,smp2pgpio-rdbg-2-in, rdbg:
+
+    GPIOs 519-550, platform/soc:qcom,smp2pgpio-ssr-smp2p-3-out, master-kernel:
+
+    GPIOs 551-582, platform/soc:qcom,smp2pgpio-ssr-smp2p-3-in, slave-kernel:
+
+    GPIOs 583-614, platform/soc:qcom,smp2pgpio-ssr-smp2p-2-out, master-kernel:
+
+    GPIOs 615-646, platform/soc:qcom,smp2pgpio-ssr-smp2p-2-in, slave-kernel:
+
+    GPIOs 647-678, platform/soc:qcom,smp2pgpio-ssr-smp2p-1-out, master-kernel:
+
+    GPIOs 679-710, platform/soc:qcom,smp2pgpio-ssr-smp2p-1-in, slave-kernel:
+
+    GPIOs 711-742, platform/soc:qcom,smp2pgpio-sleepstate-gpio-3-out, sleepstate:
+
+    GPIOs 743-774, platform/soc:qcom,smp2pgpio-smp2p-3-out, smp2p:
+
+    GPIOs 775-806, platform/soc:qcom,smp2pgpio-smp2p-3-in, smp2p:
+
+    GPIOs 807-838, platform/soc:qcom,smp2pgpio-smp2p-2-out, smp2p:
+
+    GPIOs 839-870, platform/soc:qcom,smp2pgpio-smp2p-2-in, smp2p:
+
+    GPIOs 871-902, platform/soc:qcom,smp2pgpio-smp2p-1-out, smp2p:
+
+    GPIOs 903-934, platform/soc:qcom,smp2pgpio-smp2p-1-in, smp2p:
+
+    GPIOs 935-966, platform/soc:qcom,smp2pgpio-smp2p-15-out, smp2p:
+
+    GPIOs 967-998, platform/soc:qcom,smp2pgpio-smp2p-15-in, smp2p:
+
+    GPIOs 999-999, spmi/qpnp-pin-14, pmi8994-mpp:
+
+    GPIOs 1000-1005, spmi/qpnp-pin-13, pmi8994-gpio:
+     gpio-1004 (wlan-qca-vreg-en-3p3) out hi
+     gpio-1005 (wlan-qca-vreg-en-1p8) out hi
+
+    GPIOs 1006-1009, spmi/qpnp-pin-4, pm8994-mpp:
+     gpio-1008 (qcom,hdmi-tx-hpd    ) in  hi
+
+    GPIOs 1010-1023, spmi/qpnp-pin-3, pm8994-gpio:
+     gpio-1010 (volume_up           ) in  hi
+     gpio-1014 (wlan_en_vreg        ) out hi
+     gpio-1016 (usb_otg_vreg        ) out lo
+     gpio-1018 (EXT_CLK             ) in  lo
+
+
+* GPIO enable & trigger:
+  # echo "85" > /sys/class/gpio/export
+  # cat /sys/class/gpio/gpio85/direction
+  # cat /sys/class/gpio/gpio85/value
+  # echo out > /sys/class/gpio/gpio85/direction
+  # echo 1 > /sys/class/gpio/gpio85/value
