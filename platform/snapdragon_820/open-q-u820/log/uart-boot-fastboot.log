@@ -1,0 +1,126 @@
+Pwr + Vol-
+
+> sudo minicom -D /dev/ttyUSB0
+
+Welcome to minicom 2.7.1
+
+OPTIONS: I18n
+Compiled on Dec 23 2019, 02:06:26.
+Port /dev/ttyUSB0, 13:40:53
+
+Press CTRL-A Z for help on special keys
+
+
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.XF.1.0-00331-M8996LZB-1
+S - IMAGE_VARIANT_STRING=M8996LAB
+S - OEM_IMAGE_VERSION_STRING=jenkins
+S - Boot Interface: UFS
+S - Secure Boot: Off
+S - Boot Config @ 0x00076044 = 0x000001c9
+S - JTAG ID @ 0x000760f4 = 0x4003e0e1
+S - OEM ID @ 0x000760f8 = 0x00000000
+S - Serial Number @ 0x00074138 = 0x2b5f6219
+S - OEM Config Row 0 @ 0x00074188 = 0x0000000000000000
+S - OEM Config Row 1 @ 0x00074190 = 0x0000000000000000
+S - Feature Config Row 0 @ 0x000741a0 = 0x0050000010000100
+S - Feature Config Row 1 @ 0x000741a8 = 0x00fff00001ffffff
+S - Core 0 Frequency, 1228 MHz
+B -         0 - PBL, Start
+B -     10413 - bootable_media_detect_entry, Start
+B -     47084 - bootable_media_detect_success, Start
+B -     47084 - elf_loader_entry, Start
+B -     48120 - auth_hash_seg_entry, Start
+B -     48223 - auth_hash_seg_exit, Start
+B -     80106 - elf_segs_hash_verify_entry, Start
+B -     82598 - PBL, End
+B -     84637 - SBL1, Start
+B -    181139 - usb: hs_phy_nondrive_start
+B -    181505 - usb: PLL lock success - 0x3
+B -    184494 - usb: hs_phy_nondrive_finish
+B -    188612 - boot_flash_init, Start
+D -        30 - boot_flash_init, Delta
+B -    195718 - sbl1_ddr_set_default_params, Start
+D -        30 - sbl1_ddr_set_default_params, Delta
+B -    203709 - boot_config_data_table_init, Start
+D -     91256 - boot_config_data_table_init, Delta - (60 Bytes)
+B -    299510 - CDT Version:3,Platform ID:10,Major ID:1,Minor ID:0,Subtype:28
+B -    304268 - Image Load, Start
+D -     22234 - PMIC Image Loaded, Delta - (37464 Bytes)
+B -    326533 - pm_device_init, Start
+B -    332297 - PON REASON:PM0:0x2000000a1 PM1:0x2000000a0
+B -    369141 - PM_SET_VAL:Skip
+D -     40473 - pm_device_init, Delta
+B -    371063 - pm_driver_init, Start
+D -      3019 - pm_driver_init, Delta
+B -    377651 - pm_sbl_chg_init, Start
+D -        91 - pm_sbl_chg_init, Delta
+B -    384422 - vsense_init, Start
+D -         0 - vsense_init, Delta
+B -    392535 - Pre_DDR_clock_init, Start
+D -       396 - Pre_DDR_clock_init, Delta
+B -    398055 - ddr_initialize_device, Start
+B -    401746 - 8996 v3.x detected, Max frequency = 1.8 GHz
+B -    411323 - ddr_initialize_device, Delta
+B -    411353 - DDR ID, Rank 0, Rank 1, 0xff, 0x600, 0x0
+B -    415227 - Basic DDR tests done
+B -    472353 - clock_init, Start
+D -       244 - clock_init, Delta
+B -    474366 - Image Load, Start
+D -      5673 - QSEE Dev Config Image Loaded, Delta - (48152 Bytes)
+B -    480619 - Image Load, Start
+D -      5886 - APDP Image Loaded, Delta - (0 Bytes)
+B -    489464 - usb: UFS Serial - 608d09e1
+B -    494161 - usb: fedl, vbus_low
+B -    497790 - Image Load, Start
+D -     55754 - QSEE Image Loaded, Delta - (1704316 Bytes)
+B -    553544 - Image Load, Start
+D -       183 - SEC Image Loaded, Delta - (4096 Bytes)
+B -    561139 - sbl1_efs_handle_cookies, Start
+D -       213 - sbl1_efs_handle_cookies, Delta
+B -    569618 - Image Load, Start
+D -     14365 - QHEE Image Loaded, Delta - (262592 Bytes)
+B -    583983 - Image Load, Start
+D -     13817 - RPM Image Loaded, Delta - (223964 Bytes)
+B -    598013 - Image Load, Start
+D -      3782 - STI Image Loaded, Delta - (0 Bytes)
+B -    605059 - Image Load, Start
+D -     59261 - APPSBL Image Loaded, Delta - (882460 Bytes)
+B -    664412 - SBL1, End
+D -    584045 - SBL1, Delta
+S - Flash Throughput, 102000 KB/s  (3167320 Bytes,  30790 us)
+S - DDR Frequency, 1017 MHz
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[10] RPM GLink Init
+[10] Opening RPM Glink Port success
+[10] Opening SSR Glink Port success
+[20] Glink Connection between APPS and RPM established
+[20] Glink Connection between APPS and RPM established
+[40] UFS init success
+[40] Serial No: 277010101071910397
+[40] MAC Address: 00D0CA016DAA
+[40] Qseecom Init Done in Appsbl version is 0x1001000
+[50] secure app region addr=0x86600000 size=0x2200000[60] TZ App region notif returned with status:0 addr:86600000 size:35651584
+[60] TZ App log region register returned with status:0 addr:91e2d000 size:4096
+[70] Qseecom TZ Init Done in Appsbl
+[90] Loading cmnlib done
+[90] qseecom_start_app: Loading app keymaster for the first time'
+[110] <8>keymaster64: KEYMASTER Init
+[120] Not able to search the panel:
+[120] panel_operating_mode=0x0
+[120] Return value from recv_data: 14
+[130] Return value from recv_data: 14
+[140] Return value from recv_data: 14
+[150] Return value from recv_data: 14
+[230] ERROR: Splash image header invalid
+[240] Config MIPI_VIDEO_PANEL.
+[550] Turn on MIPI_VIDEO_PANEL.
+[570] Video lane tested successfully
+[680] pm8x41_get_is_cold_boot: cold boot
+[680] fastboot_init()
+[690] creating fastboot menu keys detect thread
