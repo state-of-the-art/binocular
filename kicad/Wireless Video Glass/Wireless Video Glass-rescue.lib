@@ -1,0 +1,196 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# DF40C-100DS-0.4V(51V)--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue
+#
+DEF DF40C-100DS-0.4V(51V)--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue IC 0 40 Y Y 1 F N
+F0 "IC" 0 0 60 H V C CNN
+F1 "DF40C-100DS-0.4V(51V)--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue" -100 -5470 60 H V L BNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 -5400 600 0 0 1 10 f
+X 1 1 -300 -100 300 R 70 70 0 1 P
+X 10 10 900 -500 300 L 70 70 0 1 P
+X 100 100 900 -5000 300 L 70 70 0 1 P
+X GND 101 -300 -5200 300 R 70 70 0 1 P
+X GND 102 900 -5200 300 L 70 70 0 1 P
+X GND 103 -300 -5300 300 R 70 70 0 1 P
+X GND 104 900 -5300 300 L 70 70 0 1 P
+X 11 11 -300 -600 300 R 70 70 0 1 P
+X 12 12 900 -600 300 L 70 70 0 1 P
+X 13 13 -300 -700 300 R 70 70 0 1 P
+X 14 14 900 -700 300 L 70 70 0 1 P
+X 15 15 -300 -800 300 R 70 70 0 1 P
+X 16 16 900 -800 300 L 70 70 0 1 P
+X 17 17 -300 -900 300 R 70 70 0 1 P
+X 18 18 900 -900 300 L 70 70 0 1 P
+X 19 19 -300 -1000 300 R 70 70 0 1 P
+X 2 2 900 -100 300 L 70 70 0 1 P
+X 20 20 900 -1000 300 L 70 70 0 1 P
+X 21 21 -300 -1100 300 R 70 70 0 1 P
+X 22 22 900 -1100 300 L 70 70 0 1 P
+X 23 23 -300 -1200 300 R 70 70 0 1 P
+X 24 24 900 -1200 300 L 70 70 0 1 P
+X 25 25 -300 -1300 300 R 70 70 0 1 P
+X 26 26 900 -1300 300 L 70 70 0 1 P
+X 27 27 -300 -1400 300 R 70 70 0 1 P
+X 28 28 900 -1400 300 L 70 70 0 1 P
+X 29 29 -300 -1500 300 R 70 70 0 1 P
+X 3 3 -300 -200 300 R 70 70 0 1 P
+X 30 30 900 -1500 300 L 70 70 0 1 P
+X 31 31 -300 -1600 300 R 70 70 0 1 P
+X 32 32 900 -1600 300 L 70 70 0 1 P
+X 33 33 -300 -1700 300 R 70 70 0 1 P
+X 34 34 900 -1700 300 L 70 70 0 1 P
+X 35 35 -300 -1800 300 R 70 70 0 1 P
+X 36 36 900 -1800 300 L 70 70 0 1 P
+X 37 37 -300 -1900 300 R 70 70 0 1 P
+X 38 38 900 -1900 300 L 70 70 0 1 P
+X 39 39 -300 -2000 300 R 70 70 0 1 P
+X 4 4 900 -200 300 L 70 70 0 1 P
+X 40 40 900 -2000 300 L 70 70 0 1 P
+X 41 41 -300 -2100 300 R 70 70 0 1 P
+X 42 42 900 -2100 300 L 70 70 0 1 P
+X 43 43 -300 -2200 300 R 70 70 0 1 P
+X 44 44 900 -2200 300 L 70 70 0 1 P
+X 45 45 -300 -2300 300 R 70 70 0 1 P
+X 46 46 900 -2300 300 L 70 70 0 1 P
+X 47 47 -300 -2400 300 R 70 70 0 1 P
+X 48 48 900 -2400 300 L 70 70 0 1 P
+X 49 49 -300 -2500 300 R 70 70 0 1 P
+X 5 5 -300 -300 300 R 70 70 0 1 P
+X 50 50 900 -2500 300 L 70 70 0 1 P
+X 51 51 -300 -2600 300 R 70 70 0 1 P
+X 52 52 900 -2600 300 L 70 70 0 1 P
+X 53 53 -300 -2700 300 R 70 70 0 1 P
+X 54 54 900 -2700 300 L 70 70 0 1 P
+X 55 55 -300 -2800 300 R 70 70 0 1 P
+X 56 56 900 -2800 300 L 70 70 0 1 P
+X 57 57 -300 -2900 300 R 70 70 0 1 P
+X 58 58 900 -2900 300 L 70 70 0 1 P
+X 59 59 -300 -3000 300 R 70 70 0 1 P
+X 6 6 900 -300 300 L 70 70 0 1 P
+X 60 60 900 -3000 300 L 70 70 0 1 P
+X 61 61 -300 -3100 300 R 70 70 0 1 P
+X 62 62 900 -3100 300 L 70 70 0 1 P
+X 63 63 -300 -3200 300 R 70 70 0 1 P
+X 64 64 900 -3200 300 L 70 70 0 1 P
+X 65 65 -300 -3300 300 R 70 70 0 1 P
+X 66 66 900 -3300 300 L 70 70 0 1 P
+X 67 67 -300 -3400 300 R 70 70 0 1 P
+X 68 68 900 -3400 300 L 70 70 0 1 P
+X 69 69 -300 -3500 300 R 70 70 0 1 P
+X 7 7 -300 -400 300 R 70 70 0 1 P
+X 70 70 900 -3500 300 L 70 70 0 1 P
+X 71 71 -300 -3600 300 R 70 70 0 1 P
+X 72 72 900 -3600 300 L 70 70 0 1 P
+X 73 73 -300 -3700 300 R 70 70 0 1 P
+X 74 74 900 -3700 300 L 70 70 0 1 P
+X 75 75 -300 -3800 300 R 70 70 0 1 P
+X 76 76 900 -3800 300 L 70 70 0 1 P
+X 77 77 -300 -3900 300 R 70 70 0 1 P
+X 78 78 900 -3900 300 L 70 70 0 1 P
+X 79 79 -300 -4000 300 R 70 70 0 1 P
+X 8 8 900 -400 300 L 70 70 0 1 P
+X 80 80 900 -4000 300 L 70 70 0 1 P
+X 81 81 -300 -4100 300 R 70 70 0 1 P
+X 82 82 900 -4100 300 L 70 70 0 1 P
+X 83 83 -300 -4200 300 R 70 70 0 1 P
+X 84 84 900 -4200 300 L 70 70 0 1 P
+X 85 85 -300 -4300 300 R 70 70 0 1 P
+X 86 86 900 -4300 300 L 70 70 0 1 P
+X 87 87 -300 -4400 300 R 70 70 0 1 P
+X 88 88 900 -4400 300 L 70 70 0 1 P
+X 89 89 -300 -4500 300 R 70 70 0 1 P
+X 9 9 -300 -500 300 R 70 70 0 1 P
+X 90 90 900 -4500 300 L 70 70 0 1 P
+X 91 91 -300 -4600 300 R 70 70 0 1 P
+X 92 92 900 -4600 300 L 70 70 0 1 P
+X 93 93 -300 -4700 300 R 70 70 0 1 P
+X 94 94 900 -4700 300 L 70 70 0 1 P
+X 95 95 -300 -4800 300 R 70 70 0 1 P
+X 96 96 900 -4800 300 L 70 70 0 1 P
+X 97 97 -300 -4900 300 R 70 70 0 1 P
+X 98 98 900 -4900 300 L 70 70 0 1 P
+X 99 99 -300 -5000 300 R 70 70 0 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue
+#
+DEF LED_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue IC 0 40 Y Y 1 F N
+F0 "IC" 0 0 60 H V C CNN
+F1 "LED_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue" -300 -330 60 V V L BNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 10 50 -170 20 -190 N
+P 2 0 1 10 60 -200 30 -220 N
+P 2 0 1 10 100 -100 100 0 N
+P 3 0 1 10 100 -300 100 -250 100 -200 N
+P 5 0 1 10 30 -170 30 -170 30 -170 20 -190 40 -190 N
+P 5 0 1 10 40 -200 40 -200 30 -220 30 -220 50 -220 N
+P 7 0 1 10 40 -100 40 -100 40 -100 150 -100 100 -200 40 -100 40 -100 F
+X + 1 100 100 100 D 70 70 0 1 P
+X - 2 100 -400 100 U 70 70 0 1 P
+ENDDRAW
+ENDDEF
+#
+# TPM2008P3_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue
+#
+DEF TPM2008P3_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue IC 0 40 Y Y 1 F N
+F0 "IC" 0 0 60 H V C CNN
+F1 "TPM2008P3_0--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue" -200 -70 60 V V L BNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 400 -300 0 0 1 10 f
+P 2 0 1 10 -250 60 -250 160 N
+P 2 0 1 10 -250 200 -250 310 N
+P 2 0 1 10 -250 300 -200 300 N
+P 2 0 1 10 -230 200 -270 200 N
+P 2 0 1 10 -200 60 -250 60 N
+P 2 0 1 10 -200 130 -200 0 N
+P 2 0 1 10 -200 210 -200 170 N
+P 2 0 1 10 -200 210 -200 300 N
+P 2 0 1 10 -200 300 -200 400 N
+P 2 0 1 10 -180 170 -150 170 N
+P 2 0 1 10 -180 300 -200 300 N
+P 2 0 1 10 -150 120 -150 140 N
+P 2 0 1 10 -150 130 -200 130 N
+P 2 0 1 10 -150 160 -150 180 N
+P 2 0 1 10 -150 200 -150 220 N
+P 2 0 1 10 -150 210 -200 210 N
+P 2 0 1 10 -130 200 -130 130 N
+P 2 0 1 10 -120 300 -100 300 N
+P 2 0 1 10 -100 200 -130 200 N
+P 2 0 1 10 -100 200 -100 300 N
+P 2 0 1 10 0 200 -100 200 N
+P 5 0 1 10 -150 320 -150 320 -150 320 -150 320 -150 320 N
+P 6 0 1 10 -160 330 -160 330 -160 330 -150 320 -150 280 -140 270 N
+P 7 0 1 10 -250 200 -250 200 -250 200 -230 160 -270 160 -250 200 -250 200 F
+P 7 0 1 10 -200 170 -200 170 -200 170 -180 160 -180 180 -200 170 -200 170 F
+P 8 0 1 10 -120 320 -120 320 -120 320 -180 280 -180 320 -120 280 -120 320 -120 320 F
+X G 1 100 200 100 L 70 70 0 1 P
+X S 2 -200 500 100 D 70 70 0 1 P
+X D 3 -200 -100 100 U 70 70 0 1 P
+ENDDRAW
+ENDDEF
+#
+# T_POINT_S--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue
+#
+DEF T_POINT_S--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue IC 0 40 Y Y 1 F N
+F0 "IC" 0 0 60 H V C CNN
+F1 "T_POINT_S--03_Connector-SchDoc-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue-Wireless-Video-Glass-rescue" 0 0 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 -150 100 -50 0 1 10 f
+S 100 -150 0 -50 0 1 10 f
+S 100 -50 0 -150 0 1 10 f
+X TP 1 200 -100 100 L 1 1 0 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
