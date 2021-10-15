@@ -5,27 +5,27 @@ Protection,WQFN (20),3X3mm,","U402,U504",2,TPD6S300RUKR,TI
 3,"TS3USB30E ESD-Protected, High-Speed USB 2.0,1:2 Multiplexer/Demultiplexer Switch With Single Enable,
 UQFN (10),1.8X4mm,TI","U403,U404,U405,U502",4,TS3USB30ERSWR,TI
 4,"TPD4S010DQAR 4-Lines,Uni-directional,0.05pF,TVS Arrays,DFN-10L ,2.5x1x0.58mm,TI","U406,U407,U505,U506",4,TPD4S010DQAR,TI
-,"RClamp0524P.TCT 4-Lines,Uni-directional,0.3pF,TVS Arrays,10Pin,2.5x1x0.58mm,Semetch",,,RClamp0524P.TCT,Semetch
-,"WS05-4R2P 4-Lines,Uni-directional,0.3pF,TVS Arrays,DFN-10L ,2.5x1x0.58mm,Way-on",,,WS05-4R2P,Way-on
-,"ESDA6V8UD-10/TR  4-Lines,Uni-directional,0.4pF,TVS Arrays,DFN-10L ,2.5x1x0.58mm,Willsemi",,,ESDA6V8UD-10/TR,Willsemi
+,"RClamp0524P.TCT 4-Lines,Uni-directional,0.3pF,TVS Arrays,10Pin,2.5x1x0.58mm,Semetch",,4,RClamp0524P.TCT,Semetch
+,"WS05-4R2P 4-Lines,Uni-directional,0.3pF,TVS Arrays,DFN-10L ,2.5x1x0.58mm,Way-on",,4,WS05-4R2P,Way-on
+,"ESDA6V8UD-10/TR  4-Lines,Uni-directional,0.4pF,TVS Arrays,DFN-10L ,2.5x1x0.58mm,Willsemi",,4,ESDA6V8UD-10/TR,Willsemi
 5,"TUSB546-DCI USB Type-C DP ALT Mode linear redriver crosspoint switch,WQFN (40),4X6mm,TI",U501,1,TUSB546-DCIRNQR,TI
 6,"TMUXHS4212 Two-Channel Differential 2:1 Mux / 1:2 Demux,VQFN (20),2.50mm × 4.50mm,TI",U503,1,TMUXHS4212RKSR,TI
 7,"TC358775XBG,DSI to single/dual link LVDS to 1920x1200,BGA64,6x6mm,toshiba","U601,U602",2,TC358775XBG,toshiba
 8,"LT3495B  650mA Micropower Low Noise Boost Converter,DFN-10,3X2mm,ADI","U603,U604",2,LT3495BEDDB#TRPBF,ADI
 9,"SGM4563 4-Bit Level Translator For SPI Bus or UART Interface,UTQFN-1.8×1.8-12L,SGM","U701,U805",2,SGM4563YUQN12G/TR,SGM
 10,"SGM4553 2-Bit Bidirectional Voltage-Level Translator,XTDFN-1.4×1-8L,SGM","U702,U804",2,SGM4553YXDO8G/TR,SGM
-,"RS0102YUTDS8 2-Bit Bidirectional Voltage-Level Translator,DFN-1.4x1-8L,RUNIC",,,RS0102YUTDS8,RUNIC
-11,"TXS0102DQE 2-Bit Bidirectional Voltage-Level Translator,X2SON(8),1.4x1mm,TI",,,TXS0102DQE,TI
-12,"BCT0102ETA-TR 2-Bit Bidirectional Voltage-Level Translator,XTDFN1.4x1-8L,Broadchip",,,BCT0102ETA-TR,Broadchip
+,"RS0102YUTDS8 2-Bit Bidirectional Voltage-Level Translator,DFN-1.4x1-8L,RUNIC",,2,RS0102YUTDS8,RUNIC
+11,"TXS0102DQE 2-Bit Bidirectional Voltage-Level Translator,X2SON(8),1.4x1mm,TI",,2,TXS0102DQE,TI
+12,"BCT0102ETA-TR 2-Bit Bidirectional Voltage-Level Translator,XTDFN1.4x1-8L,Broadchip",,2,BCT0102ETA-TR,Broadchip
 13,"SN74LVC1G08 Single 2-Input Positive-AND Gate,SON (6),1.45mm × 1.0mm,TI","U703,U704",2,SN74LVC1G08DRYR,TI
-,"SGM7SZ08YUDL6G/TR  Single 2-Input Positive-AND Gate,UTDFN-1.45x1-6L,SGM",,,SGM7SZ08YUDL6G/TR,SGM
+,"SGM7SZ08YUDL6G/TR  Single 2-Input Positive-AND Gate,UTDFN-1.45x1-6L,SGM",,2,SGM7SZ08YUDL6G/TR,SGM
 14,"LT7911D Type-C to Dual-port MIPI DSI/CSI with Audio,QFN64,7.5X7.5mm,Lontium",U705,1,LT7911D,Lontium
 15,"SGM2578YG/TR Ultra Small, Low Input Voltage,Low RON Load Switch,WLCSP-0.9X0.9-4B,SGM","U708,U709,U710,U711",4,SGM2578YG/TR,SGM
-,"CPS2140CS  Ultra Small, Low Input Voltage,Low RON Load Switch,WLCSP-0.97X0.97-4B,Chiphome",,,CPS2140CS,Chiphome
+,"CPS2140CS  Ultra Small, Low Input Voltage,Low RON Load Switch,WLCSP-0.97X0.97-4B,Chiphome",,4,CPS2140CS,Chiphome
 16,"TPS65988DJ Dual Port USB Type-C® and USB PD Controller,QFN (56),7mmX7mm,TI",U801,1,TPS65988DJRSHR,TI
 17,"W25Q80DVUXIE 3V 8M-bit seral flash memory with dual and Quad SPI,WSON-8 3X2mm,Winbond",U802,1,W25Q80DVUXIE,Winbond
-,"XT25F08BDFIGT-S 3V 8M-bit seral flash memory with dual and Quad SPI,WSON-8 3X2mm,XTX",,,XT25F08BDFIGT-S ,XTX
-,"GD25WQ80EEIG 3V 8M-bit seral flash memory with dual and Quad SPI,WSON-8 3X2mm,GD",,,GD25WQ80EEIG,GD
+,"XT25F08BDFIGT-S 3V 8M-bit seral flash memory with dual and Quad SPI,WSON-8 3X2mm,XTX",,1,XT25F08BDFIGT-S ,XTX
+,"GD25WQ80EEIG 3V 8M-bit seral flash memory with dual and Quad SPI,WSON-8 3X2mm,GD",,1,GD25WQ80EEIG,GD
 18,"ETA1090D3M,1MHz High Output current High Efficiency Synchronous Step-Up Converter,
 DFN3X3-12,ETA",U803,1,ETA1090D3M,ETA
 19,"TLV1701AIDRLR,2.2-V to 36-V, microPower Comparator,SOT553 (5),1.20 mm × 1.60 mm,TI","U807,U808",2,TLV1701AIDRLR,TI
@@ -34,33 +34,33 @@ DFN3X3-12,ETA",U803,1,ETA1090D3M,ETA
 22,"TLA2024IRUGR,4-Channel,12Bit ADC with I2C interface ,X2QFN, 10Pin,TI",U905,1,TLA2024IRUGR,TI
 23,"WM8998ECS/R , High performance Audio Hub codec,W-CSP,Cirrus",U1001,1,WM8998ECS/R,Cirrus
 24,"FDMA1024NZ Dual N-channel Mosfet,20V,5.0A,54mΩ,2x2mm,Onsemi",U1002,1,FDMA1024NZ,Onsemi
-,"CJMND202 Dual N-channel Mosfet,20V,2.1A,45mΩ,2x2mm,JCET",,,CJMND202,JCET
+,"CJMND202 Dual N-channel Mosfet,20V,2.1A,45mΩ,2x2mm,JCET",,1,CJMND202,JCET
 25,"SN74AUP1G14DRY Low-Power Single Schmitt-Trigger Inverter,SON(6),1.45mmX1.0mm,TI",U1003,1,SN74AUP1G14DRY,TI
 ,"SGM7SZ04XUDL6G/TR   Low-Power Single Schmitt-Trigger Inverter,UTDFN-1.45x1-6L,SGM",,,SGM7SZ04XUDL6G/TR,SGM
 26,"BNO08X family (BNO080/85/86) is a System in Package (SiP),28 pin LGA,Bosch",U1101,1,BNO080/85/86,Bosch
 27,Crystal 27MHz  8pF ±10ppm 2520,X701,1,27M,
 28,Crystal 32.768KHz 12.5pF ±20ppm  2012 ,X1101,1,32.768K,
 29,"CJBA3139K  P-Channel  mosfet,Vds:-20V,Vgs:±12V,Id:-0.66A,950mΩ,DFN1006-3L,JCET","Q301,Q809,Q810,Q811",4,CJBA3139K,JCET
-,"PPM3FD20V1E  P-Channel  mosfet,Vds:-20V,Vgs:±10V,Id:-0.88A,860mΩ,DFN1006-3L,JCET",,,PPM3FD20V1E,Prisemi
+,"PPM3FD20V1E  P-Channel  mosfet,Vds:-20V,Vgs:±10V,Id:-0.88A,860mΩ,DFN1006-3L,JCET",,4,PPM3FD20V1E,Prisemi
 30,"SK3541 N-Channel mosfet,Vds:30V,Vgs:±20V,Id:100mA,SOT-723,Prisemi","Q803,Q804,Q805,Q812",4,SK3541,JCET
-,"PNM723T30V01 N-Channel mosfet,Vds:30V,Vgs:±20V,Id:100mA,SOT-723,JCET",,,PNM723T30V01,Prisemi
+,"PNM723T30V01 N-Channel mosfet,Vds:30V,Vgs:±20V,Id:100mA,SOT-723,JCET",,4,PNM723T30V01,Prisemi
 31,"CJMP3009G  P-channel mosfet,Vds:-30V,Vgs:±20V,Id:-9A,12.5mΩ,2X2mm,JCET","Q801,Q802,Q806,Q807,Q903,Q904,
 Q905,Q906",8,CJMP3009G,JCET
-,"FDMA530PZ  P-channel mosfet,Vds:-30V,Vgs:±25V,Id:-6.8A,35mΩ,2X2mm,Onsemi",,,FDMA530PZ,Onsemi
-,"PPM6N30V9 P-channel mosfet,Vds:-30V,Vgs:±12V,Id:-9A,35mΩ,2X2mm,Prisemi",,,PPM6N30V9,Prisemi
+,"FDMA530PZ  P-channel mosfet,Vds:-30V,Vgs:±25V,Id:-6.8A,35mΩ,2X2mm,Onsemi",,8,FDMA530PZ,Onsemi
+,"PPM6N30V9 P-channel mosfet,Vds:-30V,Vgs:±12V,Id:-9A,35mΩ,2X2mm,Prisemi",,8,PPM6N30V9,Prisemi
 32,"CJBA3134K N-Channel mosfet,Vds:20V,Vgs:±12V,Id:0.75A,900mΩ,DFN1006-3L,JCET","Q401,Q402,Q403,Q502,Q701,Q702,
 Q703,Q808",8,CJBA3134K,JCET
-,"PNM3FD201E0 N-Channel mosfet,Vds:20V,Vgs:±8V,Id:0.3A,700mΩ,DFN1006-3L,Prisemi",,,PNM3FD201E0 ,Prisemi
+,"PNM3FD201E0 N-Channel mosfet,Vds:20V,Vgs:±8V,Id:0.3A,700mΩ,DFN1006-3L,Prisemi",,8,PNM3FD201E0 ,Prisemi
 33,"BZT52C5V1S Zener Diode,Vz:5.1V,200mW,SOD-323","D605,D606",2,BZT52C5V1S,JCET
-,"PZ3D5V1H Zener Diode,Vz:5.1V,200mW,SOD-323",,,PZ3D5V1H,Prisemi
+,"PZ3D5V1H Zener Diode,Vz:5.1V,200mW,SOD-323",,2,PZ3D5V1H,Prisemi
 34,"RB521S-40 schottky barrier diode,Vrwm:40V,Io:200mA,SOD-523,JCET","D603,D604",2,RB521S-40,SOD523
-,"PSBD521S-40 schottky barrier diode,Vrwm:40V,Io:200mA,SOD-523,Prisemi",,,PSBD521S-40,Prisemi
+,"PSBD521S-40 schottky barrier diode,Vrwm:40V,Io:200mA,SOD-523,Prisemi",,2,PSBD521S-40,Prisemi
 35,"B5819WS schottky barrier diode,Vrwm:40V,Io:1A,SOD-323,JCET","D601,D602",2,B5819WS,JCET
-,"PSBD3D40V1H schottky barrier diode,Vrwm:40V,Io:1A,SOD-323,Prisemi",,,PSBD3D40V1H,Prisemi
+,"PSBD3D40V1H schottky barrier diode,Vrwm:40V,Io:1A,SOD-323,Prisemi",,2,PSBD3D40V1H,Prisemi
 36,"Inductor,WPN4012H6R8MT,Isat:1.6A,Irms:1.6A,DCR:0.226,4012,Sunlord","L601,L602",2,WPN4012H6R8MT,Sunlord
 37,"Inductor,WPN4012H2R2MT,Isat:2.8A,Irms:2.7A,DCR:0.079,4012,Sunlord",L801,1,WPN4012H2R2MT,Sunlord
 38,"Inductor,WPN252012E1R0MT,1uH,Isat:4.5A,Irms:3.5A,DCR:0.044,2520,Sunlord","L901,L902",2,WPN252012E1R0MT,Sunlord
-,"Inductor,MPIA252012-1R0M-LF,1uH,Isat:3.8A,Irms:3.3A,DCR:0.057,2520,Microgate",,,MPIA252012-1R0M-LF,Microgate
+,"Inductor,MPIA252012-1R0M-LF,1uH,Isat:3.8A,Irms:3.3A,DCR:0.057,2520,Microgate",,2,MPIA252012-1R0M-LF,Microgate
 39,"TVS,JE05B1RD20-2 5V 1-Line Bi-directional  Diode,0.5pF,100W,DFN1006-2,Jelan-Link","T409,T410",2,JE05B1RD20-2,Jelan-Link
 40,"TVS,JS05B1LD20-2 5V 1-Line Bi-directional  Diode,110pF,200W,DFN1006-2,Jelan-Link","T901,T902",2,JS05B1LD20-2,Jelan-Link
 41,"TVS,JE12B1LD20-2A 12V 1-Line Bi-directional  Diode,35pF,375W,DFN1006-2,Jelan-Link","T1001,T1002,T1003,T1004",4,JE12B1LD20-2A,Jelan-Link
