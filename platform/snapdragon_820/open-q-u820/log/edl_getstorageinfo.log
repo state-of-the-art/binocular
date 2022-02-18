@@ -1,0 +1,80 @@
+$ edl getstorageinfo --skipresponse --loader build/lib/Loaders/qualcomm/model_generic/msm8996/0000000000000000_b53fb23d1953decb_fhprg_peek.bin
+Qualcomm Sahara / Firehose Client V3.60 (c) B.Kerler 2018-2022.
+main - Using loader build/lib/Loaders/qualcomm/model_generic/msm8996/0000000000000000_b53fb23d1953decb_fhprg_peek.bin ...
+main - Waiting for the device
+main - Device detected :)
+main - Mode detected: firehose
+main - Trying to connect to firehose loader ...
+firehose - fh.attrs.Verbose is set to 0
+firehose - Chip serial num: 727671321 (0x2b5f6219)
+firehose - Supported Functions: program configure nop firmwarewrite patch setbootablestoragedrive ufs emmc readIMEI writeIMEI simlock power benchmark read eMMCinfo getstorageinfo getsha256digest e
+rase peek poke
+firehose_client
+firehose_client - [LIB]: No --memory option set, we assume "UFS" as default ..., if it fails, try using "--memory" with "UFS","NAND" or "spinor" instead !
+firehose - TargetName=MSM8996
+firehose - MemoryName=UFS
+firehose - Version=2
+firehose - Trying to read first storage sector...
+firehose - Running configure...
+firehose - {'Device Total Logical Blocks': '0x60ac00', 'Device Block Size in Bytes': '0x1000', 'Device Total Physical Paritions': '0x6', 'Device Manufacturer ID': '0x198', 'Device Serial Number':
+'0x0', 'UFS fInitialized': '0x1', 'UFS Current LUN Number: ': ' 0xd0', 'UFS Total Active LU': '0x6', 'UFS wManufacturerID': '0x198', 'UFS Boot Partition Enabled': '0x1', 'UFS Raw Device Capacity:
+': ' 0x3b9e000', 'UFS Min Block Size': '0x8', 'UFS Erase Block Size': '0x2000', 'UFS Allocation Unit Size': '0x1', 'UFS RPMB ReadWrite Size: ': ' 0x40', 'UFS Number of Allocation Uint for This LU'
+: '0x0', 'UFS Logical Block Size': '0x0', 'UFS Provisioning Type': '0x0', 'UFS LU Write Protect': '0x0', 'UFS Boot LUN ID: ': ' 0x0', 'UFS Memory Type': '0x0', 'UFS LU Total Blocks': '0x0', 'UFS S
+upported Memory Types': '0x801f', 'UFS dEnhanced1MaxNAllocU': '0x1dcf', 'UFS wEnhanced1CapAdjFac': '0x200', 'UFS dEnhanced2MaxNAllocU: ': ' 0x20', 'UFS wEnhanced2CapAdjFac': '0x200', 'UFS dEnhance
+d3MaxNAllocU': '0x0', 'UFS wEnhanced3CapAdjFac': '0x0', 'UFS dEnhanced4MaxNAllocU': '0x0', 'UFS wEnhanced4CapAdjFac': '0x0', 'UFS LUN Enable Bitmask': '0x3f', 'UFS Logical Block Count': '0x0', 'UF
+S bConfigDescrLock': '0x0', 'UFS iManufacturerName String Index': '0x1', 'UFS iProductName String Index': '0x2', 'UFS iSerialNumber String Index': '0x3', 'UFS iOemID String Index': '0x4', 'UFS Inq
+uiry Command Output': 'TOSHIBA THGAF4G8N2LBAIRB0100 '}
+firehose - {'Device Total Logical Blocks': '0x60ac00', 'Device Block Size in Bytes': '0x1000', 'Device Total Physical Paritions': '0x6', 'Device Manufacturer ID': '0x198', 'Device Serial Number':
+'0x0', 'UFS fInitialized': '0x1', 'UFS Current LUN Number: ': ' 0xd0', 'UFS Total Active LU': '0x6', 'UFS wManufacturerID': '0x198', 'UFS Boot Partition Enabled': '0x1', 'UFS Raw Device Capacity:
+': ' 0x3b9e000', 'UFS Min Block Size': '0x8', 'UFS Erase Block Size': '0x2000', 'UFS Allocation Unit Size': '0x1', 'UFS RPMB ReadWrite Size: ': ' 0x40', 'UFS Number of Allocation Uint for This LU'
+: '0x0', 'UFS Logical Block Size': '0x0', 'UFS Provisioning Type': '0x0', 'UFS LU Write Protect': '0x0', 'UFS Boot LUN ID: ': ' 0x0', 'UFS Memory Type': '0x0', 'UFS LU Total Blocks': '0x0', 'UFS S
+upported Memory Types': '0x801f', 'UFS dEnhanced1MaxNAllocU': '0x1dcf', 'UFS wEnhanced1CapAdjFac': '0x200', 'UFS dEnhanced2MaxNAllocU: ': ' 0x20', 'UFS wEnhanced2CapAdjFac': '0x200', 'UFS dEnhance
+d3MaxNAllocU': '0x0', 'UFS wEnhanced3CapAdjFac': '0x0', 'UFS dEnhanced4MaxNAllocU': '0x0', 'UFS wEnhanced4CapAdjFac': '0x0', 'UFS LUN Enable Bitmask': '0x3f', 'UFS Logical Block Count': '0x0', 'UF
+S bConfigDescrLock': '0x0', 'UFS iManufacturerName String Index': '0x1', 'UFS iProductName String Index': '0x2', 'UFS iSerialNumber String Index': '0x3', 'UFS iOemID String Index': '0x4', 'UFS Inq
+uiry Command Output': 'TOSHIBA THGAF4G8N2LBAIRB0100 '}
+firehose - 0x1
+firehose_client - Supported functions:
+-----------------
+program,configure,nop,firmwarewrite,patch,setbootablestoragedrive,ufs,emmc,readIMEI,writeIMEI,simlock,power,benchmark,read,eMMCinfo,getstorageinfo,getsha256digest,erase,peek,poke
+firehose - GetStorageInfo:
+--------------------
+
+firehose - Device Total Logical Blocks: 0x60000
+firehose - Device Block Size in Bytes: 0x1000
+firehose - Device Total Physical Paritions: 0x6
+firehose - Device Manufacturer ID: 0x198
+firehose - Device Serial Number: 0x0
+firehose - UFS fInitialized: 0x1
+firehose - UFS Current LUN Number: = 0xd0
+firehose - UFS Total Active LU: 0x6
+firehose - UFS wManufacturerID: 0x198
+firehose - UFS Boot Partition Enabled: 0x1
+firehose - UFS Raw Device Capacity: = 0x3b9e000
+firehose - UFS Min Block Size: 0x8
+firehose - UFS Erase Block Size: 0x2000
+firehose - UFS Allocation Unit Size: 0x1
+firehose - UFS RPMB ReadWrite Size: = 0x40
+firehose - UFS Number of Allocation Uint for This LU: 0x0
+firehose - UFS Logical Block Size: 0x0
+firehose - UFS Provisioning Type: 0x0
+firehose - UFS LU Write Protect: 0x0
+firehose - UFS Boot LUN ID: = 0x0
+firehose - UFS Memory Type: 0x0
+firehose - UFS LU Total Blocks: 0x0
+firehose - UFS Supported Memory Types: 0x801f
+firehose - UFS dEnhanced1MaxNAllocU: 0x1dcf
+firehose - UFS wEnhanced1CapAdjFac: 0x200
+firehose - UFS dEnhanced2MaxNAllocU: = 0x20
+firehose - UFS wEnhanced2CapAdjFac: 0x200
+firehose - UFS dEnhanced3MaxNAllocU: 0x0
+firehose - UFS wEnhanced3CapAdjFac: 0x0
+firehose - UFS dEnhanced4MaxNAllocU: 0x0
+firehose - UFS wEnhanced4CapAdjFac: 0x0
+firehose - UFS LUN Enable Bitmask: 0x3f
+firehose - UFS Logical Block Count: 0x0
+firehose - UFS bConfigDescrLock: 0x0
+firehose - UFS iManufacturerName String Index: 0x1
+firehose - UFS iProductName String Index: 0x2
+firehose - UFS iSerialNumber String Index: 0x3
+firehose - UFS iOemID String Index: 0x4
+firehose - UFS Inquiry Command Output: TOSHIBA THGAF4G8N2LBAIRB0100

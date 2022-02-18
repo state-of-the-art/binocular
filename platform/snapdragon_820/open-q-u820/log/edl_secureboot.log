@@ -1,0 +1,7 @@
+$ edl secureboot --skipstorageinit --loader build/lib/Loaders/qualcomm/model_generic/msm8996/0000000000000000_b53fb23d1953decb_fhprg_peek.bin
+...
+Sec_Boot0 PKHash-Index:0 OEM_PKHash: False Auth_Enabled: FalseUse_Serial: False
+Sec_Boot1 PKHash-Index:0 OEM_PKHash: False Auth_Enabled: FalseUse_Serial: False
+Sec_Boot2 PKHash-Index:0 OEM_PKHash: False Auth_Enabled: FalseUse_Serial: False
+Sec_Boot3 PKHash-Index:0 OEM_PKHash: False Auth_Enabled: FalseUse_Serial: False
+Secure boot disabled.

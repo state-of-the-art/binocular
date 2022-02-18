@@ -1,0 +1,72 @@
+t: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.XF.1.0-00331-M8996LZB-1
+S - IMAGE_VARIANT_STRING=M8996LAB
+S - OEM_IMAGE_VERSION_STRING=jenkins
+S - Boot Interface: UFS
+S - Secure Boot: Off
+S - Boot Config @ 0x00076044 = 0x000001c9
+S - JTAG ID @ 0x000760f4 = 0x4003e0e1
+S - OEM ID @ 0x000760f8 = 0x00000000
+S - Serial Number @ 0x00074138 = 0x2b5f6219
+S - OEM Config Row 0
+B -         0 - PBL, Start
+B -     10413 - bootable_media_detect_entry, Start
+B -     47091 - bootable_media_detect_success, Start
+B -     47091 - elf_loader_entry, Start
+B -     48117 - auth_hash_seg_entry, Start
+B -     48220 - auth_hash_seg_exit, Start
+B -     80102 - elf_segs_hash_verify_entry, Start
+B -     82598 - PBL, End
+B -     84637 - SBL1, Start
+B -    181109 - usb: hs_phy_nondrive_start
+B -    181475 - usb: PLL lock success - 0x3
+B -    184464 - usb: hs_phy_nondrive_finish
+B -    188581 - boot_flash_init, Start
+D -        30 - boot_flash_init, Delta
+B -    195688 - sbl1_ddr_set_default_params, Start
+D -        30 - sbl1_ddr_set_default_params, Delta
+B -    203679 - boot_config_data_table_init, Start
+D -     96288 - boot_config_data_table_init, Delta - (60 Bytes)
+B -    304512 - CDT Version:3,Platform ID:10,Major ID:1,Minor ID:0,Subtype:28
+B -    309270 - Image Load, Start
+D -     22173 - PMIC Image Loaded, Delta - (37464 Bytes)
+B -    331474 - pm_device_init, Start
+B -    337269 - PON REASON:PM0:0x8000a0 PM1:0x200a0
+B -    374082 - PM_SET_VAL:Skip
+D -     40473 - pm_device_init, Delta
+B -    376004 - pm_driver_init, Start
+D -      3019 - pm_driver_init, Delta
+B -    382592 - pm_sbl_chg_init, Start
+D -        91 - pm_sbl_chg_init, Delta
+B -    389363 - vsense_init, Start
+D -         0 - vsense_init, Delta
+B -    397476 - Pre_DDR_clock_init, Start
+D -       396 - Pre_DDR_clock_init, Delta
+B -    402966 - ddr_initialize_device, Start
+B -    406656 - 8996 v3.x detected, Max frequency = 1.8 GHz
+B -    416233 - ddr_initialize_device, Delta
+B -    416264 - DDR ID, Rank 0, Rank 1, 0xff, 0x600, 0x0
+B -    420168 - Basic DDR tests done
+B -    477142 - clock_init, Start
+D -       244 - clock_init, Delta
+B -    479155 - Image Load, Start
+D -      5673 - QSEE Dev Config Image Loaded, Delta - (48152 Bytes)
+B -    485407 - Image Load, Start
+D -      5887 - APDP Image Loaded, Delta - (0 Bytes)
+B -    494191 - usb: fedl, vbus_low
+B -    498949 - Image Load, Start
+D -     55358 - QSEE Image Loaded, Delta - (1704316 Bytes)
+B -    554307 - Image Load, Start
+D -       152 - SEC Image Loaded, Delta - (4096 Bytes)
+B -    561901 - sbl1_efs_handle_cookies, Start
+D -       213 - sbl1_efs_handle_cookies, Delta
+B -    570380 - Image Load, Start
+D -     14305 - QHEE Image Loaded, Delta - (262592 Bytes)
+B -    584715 - Image Load, Start
+B -    598715 - Error code 302e at (boot_elf_load_and_verify_image) Line 945
+B -    598745 - Image Load, Start
+D -     12963 - XBLRamDump Image Loaded, Delta - (342878 Bytes)
+B -    665998 - usb: init start
+B -    667797 - usb: PLL lock success , 0x3
+B -    682895 - usb: FULL , 0x900e

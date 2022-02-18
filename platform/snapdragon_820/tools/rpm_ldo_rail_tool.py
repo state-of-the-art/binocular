@@ -33,7 +33,7 @@ ldo_num = 32 # Number of LDO config items to process
 ldo1_current_threshold = 10 # in mA
 ldo1_safety_headroom = 25 # in mV
 
-print(sys.argv)
+
 rpm_file_path = sys.argv[1]
 
 # Pack as 12 bit unsigned each

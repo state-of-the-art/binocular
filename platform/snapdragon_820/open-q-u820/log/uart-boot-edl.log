@@ -1,0 +1,59 @@
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.XF.1.0-00331-M8996LZB-1
+S - IMAGE_VARIANT_STRING=M8996LAB
+S - OEM_IMAGE_VERSION_STRING=jenkins
+S - Boot Interface: UFS
+S - Secure Boot: Off
+S - Boot Config @ 0x00076044 = 0x000001c9
+S - JTAG ID @ 0x000760f4 = 0x4003e0e1
+S - OEM ID @ 0x000760f8 = 0x00000000
+S - Serial Number @ 0x00074138 = 0x2b5f6219
+S - OEM Config Row 0 @ 0x00074188 = 0x0000000000000000
+S - OEM Config Row 1 @ 0x00074190 = 0x0000000000000000
+S - Feature Config Row 0 @ 0x000741
+B -         0 - PBL, Start
+B -     10413 - bootable_media_detect_entry, Start
+B -     47087 - bootable_media_detect_success, Start
+B -     47087 - elf_loader_entry, Start
+B -     48112 - auth_hash_seg_entry, Start
+B -     48215 - auth_hash_seg_exit, Start
+B -     80114 - elf_segs_hash_verify_entry, Start
+B -     82610 - PBL, End
+B -     84637 - SBL1, Start
+B -    181170 - usb: hs_phy_nondrive_start
+B -    181505 - usb: PLL lock success - 0x3
+B -    184494 - usb: hs_phy_nondrive_finish
+B -    188642 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    195749 - sbl1_ddr_set_default_params, Start
+D -         0 - sbl1_ddr_set_default_params, Delta
+B -    203740 - boot_config_data_table_init, Start
+D -     97386 - boot_config_data_table_init, Delta - (60 Bytes)
+B -    305671 - CDT Version:3,Platform ID:10,Major ID:1,Minor D -     22234 - PMIC Image Loaded, Delta - (37464 Bytes)
+B -    332663 - pm_device_init, Start
+B -    338458 - PON REASON:PM0:0x20 PM1:0x20
+B -    375302 - PM_SET_VAL:Skip
+D -     40504 - pm_device_init, Delta
+B -    377224 - pm_driver_init, Start
+D -      3019 - elta
+B -    383812 - pm_sbl_chg_init, Start
+D -        91 - pm_sbl_chg_init, Delta
+B -    390583 - vsense_init, Start
+D -        30 - vsense_init, Delta
+B -    398696 - Pre_DDR_clock_init, Start
+D -       396 - Pre_DDR_clock_init, Delta
+B -    404186 - ddr_initialize_device, Start
+B -    407876 - 8996 v3.x detected, Max frequency = 1.8 GHz
+B -    417453 - ddr_initialize_device, Delta
+B -    417453 - DDR ID, Rank 0, Rank 1, 0xff, 0x600, 0x0
+B -    421388 - Basic DDR tests done
+B -    478484 - clock_init, Start
+D -       244 - clock_init, Delta
+B -    480466 - Image Load, Start
+D -      5704 - QSEE Dev Config Image Loaded, Delta - (48152 Bytes)
+B -    486719 - Image Load, Start
+D -      5917 - APDP Image Loaded, Delta - (0 Bytes)
+B -    495564 - usb: UFS Serial - 608d09e1
+B -    600728 - usb: chgr - SDP
+B -    601460 - usb: PLL lock success - 0x3
