@@ -36,7 +36,7 @@ the devboard
 8. When the devboard booted release the button on the cable and you will see that the host
 recognized the new USB device with `idVendor=05c6` and `idProduct=9008` - it's your EDL
 
-## Building EDL app
+## Getting the EDL app
 
 To use EDL we need a special application to interact with sahara protocol to upload the firehose
 binary and make it do what we want. For that we will use edl from https://github.com/bkerler/edl
