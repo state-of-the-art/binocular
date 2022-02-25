@@ -18,15 +18,15 @@ import tempfile
 
 # LDO_n => (min_mV, max_mV)
 todo_ldo_mv = {
-    14: (2800, 2800), # J302, 36 pin,    VREG_L14A_2P8  (def 1.8V)  -> touch controll module
-    15: (1200, 1200), # J302, 6 pin,     VREG_L15A_1P2  (def 1.8V)  -> LCD controllor TC358775XBG
-    17: (3300, 3300), # J302, 17 pin,    VREG_L17A_3P3  (def 2.8V)  -> LT7911D power supply
-    18: (1800, 1800), # J501, 100 pin,   VREG_L18A_1P8  (def 2.85V) -> right LCD
-    19: (1200, 1200), # J302, 2+4 pin,   VREG_L19A_1P2  (def 2.8V)  -> LT7911D power supply
-    21: (3300, 3300), # J302, 19+21 pin, VREG_L21A_3P3  (def 2.95V) -> TUSB564 and TPS65988
-    22: (2850, 2850), # J301, 30 pin,    VREG_L22A_2P85 (def 3.0V)  -> BNO085 9-axis sensor
-    23: (1800, 1800), # J302, 23 pin,    VREG_L23A_1P8  (def 2.8V)  -> left LCD
-    29: (3300, 3300), # J302, 51 pin,    VREG_L29A_3P3  (def 2.8V)  -> TUSB546
+    14: (1700, 3050), # 2.8V, J302, 36 pin,    VREG_L14A_2P8  (def 1.8V)  -> touch controll module (devboard: Display conn ???)
+    15: (1200, 1800), # 1.2V, J302, 6 pin,     VREG_L15A_1P2  (def 1.8V)  -> LCD controllor TC358775XBG (devboard: Display conn ???)
+    17: (2500, 3300), # 3.3V, J302, 17 pin,    VREG_L17A_3P3  (def 2.8V)  -> LT7911D power supply (devboard: CAM0 conn (pin 5), J60 POWER CONN (pin 2))
+    18: (1800, 2900), # 1.8V, J501, 100 pin,   VREG_L18A_1P8  (def 2.85V) -> right LCD (devboard: CAM1 conn (pin 5), J60 POWER CONN (pin 8))
+    19: (1200, 3100), # 1.2V, J302, 2+4 pin,   VREG_L19A_1P2  (def 2.8V)  -> LT7911D power supply (devboard: J53 Sensor Expansion Header (pin 8))
+    21: (2700, 3300), # 3.3V, J302, 19+21 pin, VREG_L21A_3P3  (def 2.95V) -> TUSB564 and TPS65988 (devboard: microsd card ???)
+    22: (1750, 3300), # 2.85V, J301, 30 pin,   VREG_L22A_2P85 (def 3.0V)  -> BNO085 9-axis sensor (devboard: ???)
+    23: (1800, 2900), # 1.8V, J302, 23 pin,    VREG_L23A_1P8  (def 2.8V)  -> left LCD (devboard: CAM0 conn (pin 7,8), J60 POWER CONN (pin 3,15))
+    29: (2750, 3300), # 3.3V, J302, 51 pin,    VREG_L29A_3P3  (def 2.8V)  -> TUSB546 (devboard: J60 POWER CONN (pin 14))
 }
 
 ldo_num = 32 # Number of LDO config items to process
