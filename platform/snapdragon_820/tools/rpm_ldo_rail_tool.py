@@ -16,17 +16,27 @@ import shutil
 import struct
 import tempfile
 
-# LDO_n => (min_mV, max_mV)
+# LDO_n => (target_mV)
+# Will expand the voltage limits of LDO RPM structure if needed
 todo_ldo_mv = {
-    14: (1700, 3050), # 2.8V, J302, 36 pin,    VREG_L14A_2P8  (def 1.8V)  -> touch controll module (devboard: Display conn ???)
-    15: (1200, 1800), # 1.2V, J302, 6 pin,     VREG_L15A_1P2  (def 1.8V)  -> LCD controllor TC358775XBG (devboard: Display conn ???)
-    17: (2500, 3300), # 3.3V, J302, 17 pin,    VREG_L17A_3P3  (def 2.8V)  -> LT7911D power supply (devboard: CAM0 conn (pin 5), J60 POWER CONN (pin 2))
-    18: (1800, 2900), # 1.8V, J501, 100 pin,   VREG_L18A_1P8  (def 2.85V) -> right LCD (devboard: CAM1 conn (pin 5), J60 POWER CONN (pin 8))
-    19: (1200, 3100), # 1.2V, J302, 2+4 pin,   VREG_L19A_1P2  (def 2.8V)  -> LT7911D power supply (devboard: J53 Sensor Expansion Header (pin 8))
-    21: (2700, 3300), # 3.3V, J302, 19+21 pin, VREG_L21A_3P3  (def 2.95V) -> TUSB564 and TPS65988 (devboard: microsd card ???)
-    22: (1750, 3300), # 2.85V, J301, 30 pin,   VREG_L22A_2P85 (def 3.0V)  -> BNO085 9-axis sensor (devboard: ???)
-    23: (1800, 2900), # 1.8V, J302, 23 pin,    VREG_L23A_1P8  (def 2.8V)  -> left LCD (devboard: CAM0 conn (pin 7,8), J60 POWER CONN (pin 3,15))
-    29: (2750, 3300), # 3.3V, J302, 51 pin,    VREG_L29A_3P3  (def 2.8V)  -> TUSB546 (devboard: J60 POWER CONN (pin 14))
+    # LDO14 - 2.8V, J302, 36 pin,    VREG_L14A_2P8  (def 1.8V)  -> touch controll module (devboard: Display conn ???)
+    14: 2800, # No changes needed for default range
+    # LDO15 - 1.2V, J302, 6 pin,     VREG_L15A_1P2  (def 1.8V)  -> LCD controllor TC358775XBG (devboard: Display conn ???)
+    15: (1200, 1500), # Change voltage index to 2 (low range)
+    # LDO17 - 3.3V, J302, 17 pin,    VREG_L17A_3P3  (def 2.8V)  -> LT7911D power supply (devboard: CAM0 conn (pin 5), J60 POWER CONN (pin 2))
+    17: (1750, 3300), # Change voltage index from 3 (mid range) to 4 (high range)
+    # LDO18 - 1.8V, J501, 100 pin,   VREG_L18A_1P8  (def 2.85V) -> right LCD (devboard: CAM1 conn (pin 5), J60 POWER CONN (pin 8))
+    18: 1800, # No voltage index range change needed
+    # LDO19 - 1.2V, J302, 2+4 pin,   VREG_L19A_1P2  (def 2.8V)  -> LT7911D power supply (devboard: J53 Sensor Expansion Header (pin 8))
+    19: (1200, 1500), # Change voltage index to 2 (low range)
+    # LDO21 - 3.3V, J302, 19+21 pin, VREG_L21A_3P3  (def 2.95V) -> TUSB564 and TPS65988 (devboard: microsd card ???)
+    21: (1750, 3300), # Change voltage index from 3 (mid range) to 4 (high range)
+    # LDO22 - 2.85V, J301, 30 pin,   VREG_L22A_2P85 (def 3.0V)  -> BNO085 9-axis sensor (devboard: ???)
+    22: 2850, # No changes needed for default range
+    # LDO23 - 1.8V, J302, 23 pin,    VREG_L23A_1P8  (def 2.8V)  -> left LCD (devboard: CAM0 conn (pin 7,8), J60 POWER CONN (pin 3,15))
+    23: 1800, # No voltage index range change needed
+    # LDO29 - 3.3V, J302, 51 pin,    VREG_L29A_3P3  (def 2.8V)  -> TUSB546 (devboard: J60 POWER CONN (pin 14))
+    29: (1750, 3300), # Change voltage index from 3 (mid range) to 4 (high range)
 }
 
 ldo_num = 32 # Number of LDO config items to process
@@ -73,30 +83,50 @@ with open(rpm_file_path, 'rb') as f:
     for n in range(1, ldo_num+1):
         data = f.read(12) # line of ldo consists of 12 bytes: u12u12u1u1u1u3u1u1 u16u16 u16u1u1u14 
         newdata = list(data)
-        print("LDO{} raw:".format(n), data.hex())
-
-        # u12u12
-        (word,) = struct.unpack('<L', data[0:3] + b'\x00')
-        ldo_current_threshold = word & 0xfff
-        ldo_safety_headroom = (word >> 12) & 0xfff
-        print("   Current Threshold: %dmA, Safety Headroom: %dmV" % (
-            ldo_current_threshold, ldo_safety_headroom))
-
-        # u1u1u1u3u1u1
-        # TODO
-
-        # u16u16
-        (ldo_min_mv,ldo_max_mv) = struct.unpack('<HH', data[4:8])
         if n in todo_ldo_mv.keys():
-            print(" ! Voltage: Min: %.3fV -> %.3fV, Max: %.3fV -> %.3fV" % (
-                ldo_min_mv/1000, todo_ldo_mv[n][0]/1000, ldo_max_mv/1000, todo_ldo_mv[n][1]/1000))
-            newdata[4:8] = list(struct.pack('<HH', todo_ldo_mv[n][0], todo_ldo_mv[n][1]))
-        else:
-            print("   Voltage: Min: %.3fV, Max: %.3fV" % (
-                ldo_min_mv/1000, ldo_max_mv/1000))
+            print("LDO{} raw:".format(n), data.hex())
 
-        # u16u1u1u14
-        # TODO
+            # u12u12
+            (word,) = struct.unpack('<L', data[0:3] + b'\x00')
+            ldo_current_threshold = word & 0xfff
+            ldo_safety_headroom = (word >> 12) & 0xfff
+            print("   Current Threshold: %dmA, Safety Headroom: %dmV" % (
+                ldo_current_threshold, ldo_safety_headroom))
+
+            # u1u1u1u3u1u1
+            # TODO
+
+            # u16u16
+            (ldo_min_mv,ldo_max_mv) = struct.unpack('<HH', data[4:8])
+            new_vmin = ldo_min_mv
+            new_vmax = ldo_max_mv
+            if isinstance(todo_ldo_mv[n], tuple):
+                new_vmin = todo_ldo_mv[n][0]
+                new_vmax = todo_ldo_mv[n][1]
+            elif isinstance(todo_ldo_mv[n], int):
+                # Make sure the value is in the limits
+                if todo_ldo_mv[n] < ldo_min_mv:
+                    new_vmin = todo_ldo_mv[n]
+                    newdata[4:6] = list(struct.pack('<H', new_vmin))
+                elif todo_ldo_mv[n] > ldo_max_mv:
+                    new_vmax = todo_ldo_mv[n]
+                    newdata[6:8] = list(struct.pack('<H', new_vmax))
+            else:
+                print("ERROR: Unable to set value of LDO", n, "value:", todo_ldo_mv[n])
+
+            newdata[4:8] = list(struct.pack('<HH', new_vmin, new_vmax))
+
+            if new_vmin != ldo_min_mv:
+                print(" ! Voltage Min: %.3fV -> %.3fV" % (ldo_min_mv/1000, new_vmin/1000))
+            else:
+                print("   Voltage Min: %.3fV" % (ldo_min_mv/1000,))
+            if new_vmax != ldo_max_mv:
+                print(" ! Voltage Max: %.3fV -> %.3fV" % (ldo_max_mv/1000, new_vmax/1000))
+            else:
+                print("   Voltage Max: %.3fV" % (ldo_max_mv/1000,))
+
+            # u16u1u1u14
+            # TODO
 
         # Writing the changed data to new rpm
         newdata = bytes(newdata)

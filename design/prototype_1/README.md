@@ -67,102 +67,42 @@ The voltages in the original RPM configuration is not suitable, so we need to re
    Search for magic 00000000000000000a9001: 0x1000 0x2000 0x3000 0x4000 0x5000 0x6000 0x7000 0x8000 0x9000 0xa000 0xb000 0xc000 0xd000 0xe000 0xf000 0x10000 0x11000 0x12000 0x13000 0x14000 0x15000 0x16000 0x17000 0x18000 0x19000 0x1a000 0x1b000 0x1c000 0x1d000 0x1e000 0x1f000 0x20000 0x21000 0x22000 0x23000 0x24000 0x25000 0x26000 0x27000 0x28000 0x29000 0x2a000 0x2b000 0x2c000 0x2d000 0x2e000 0x2f000 0x30000 0x31000 0x32000 0x33000
    LDO struct was found on address 0x33098 processing...
 
-   LDO1 raw: 0a900100e803140500000300
-      Current Threshold: 10mA, Safety Headroom: 25mV
-      Voltage: Min: 1.000V, Max: 1.300V
-   LDO2 raw: 0a90014ab004140500000300
-      Current Threshold: 10mA, Safety Headroom: 25mV
-      Voltage: Min: 1.200V, Max: 1.300V
-   LDO3 raw: 0a800c0277014c0400000300
-      Current Threshold: 10mA, Safety Headroom: 200mV
-      Voltage: Min: 0.375V, Max: 1.100V
-   LDO4 raw: 05900102b004e20400000300
-      Current Threshold: 5mA, Safety Headroom: 25mV
-      Voltage: Min: 1.200V, Max: 1.250V
-   LDO5 raw: 05c012006405cc0600000300
-      Current Threshold: 5mA, Safety Headroom: 300mV
-      Voltage: Min: 1.380V, Max: 1.740V
-   LDO6 raw: 05900102b004e20400000300
-      Current Threshold: 5mA, Safety Headroom: 25mV
-      Voltage: Min: 1.200V, Max: 1.250V
-   LDO7 raw: 05c01200cc06d00700000300
-      Current Threshold: 5mA, Safety Headroom: 300mV
-      Voltage: Min: 1.740V, Max: 2.000V
-   LDO8 raw: 05c012000807080700000300
-      Current Threshold: 5mA, Safety Headroom: 300mV
-      Voltage: Min: 1.800V, Max: 1.800V
-   LDO9 raw: 0ac01202a406ea0b00000200
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 1.700V, Max: 3.050V
-   LDO10 raw: 0ac01202a406ea0b00000200
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 1.700V, Max: 3.050V
-   LDO11 raw: 059001024c04e20400000300
-      Current Threshold: 5mA, Safety Headroom: 25mV
-      Voltage: Min: 1.100V, Max: 1.250V
-   LDO12 raw: 0ac012020807080700000300
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 1.800V, Max: 1.800V
-   LDO13 raw: 0ac012020807860b00000200
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 1.800V, Max: 2.950V
    LDO14 raw: 0ac01202a406ea0b00000300
       Current Threshold: 10mA, Safety Headroom: 300mV
-    ! Voltage: Min: 1.700V -> 2.800V, Max: 3.050V -> 2.800V
+      Voltage Min: 1.700V
+      Voltage Max: 3.050V
    LDO15 raw: 0ac012020807080700000300
       Current Threshold: 10mA, Safety Headroom: 300mV
-    ! Voltage: Min: 1.800V -> 1.200V, Max: 1.800V -> 1.200V
-   LDO16 raw: 059001028c0af00a00000300
-      Current Threshold: 5mA, Safety Headroom: 25mV
-      Voltage: Min: 2.700V, Max: 2.800V
+    ! Voltage Min: 1.800V -> 1.200V
+    ! Voltage Max: 1.800V -> 1.500V
    LDO17 raw: 0aa00f02c4098c0a00000300
       Current Threshold: 10mA, Safety Headroom: 250mV
-    ! Voltage: Min: 2.500V -> 3.300V, Max: 2.700V -> 3.300V
+    ! Voltage Min: 2.500V -> 1.750V
+    ! Voltage Max: 2.700V -> 3.300V
    LDO18 raw: 0a800c028c0a540b00000200
       Current Threshold: 10mA, Safety Headroom: 200mV
-    ! Voltage: Min: 2.700V -> 1.800V, Max: 2.900V -> 1.800V
+    ! Voltage Min: 2.700V -> 1.800V
+      Voltage Max: 2.900V
    LDO19 raw: 0a400602220b1c0c00000300
       Current Threshold: 10mA, Safety Headroom: 100mV
-    ! Voltage: Min: 2.850V -> 1.200V, Max: 3.100V -> 1.200V
-   LDO20 raw: 0ac012028c0a860b00000300
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 2.700V, Max: 2.950V
+    ! Voltage Min: 2.850V -> 1.200V
+    ! Voltage Max: 3.100V -> 1.500V
    LDO21 raw: 0ac012028c0a860b00000200
       Current Threshold: 10mA, Safety Headroom: 300mV
-    ! Voltage: Min: 2.700V -> 3.300V, Max: 2.950V -> 3.300V
+    ! Voltage Min: 2.700V -> 1.750V
+    ! Voltage Max: 2.950V -> 3.300V
    LDO22 raw: 0ac01202d606e40c00000300
       Current Threshold: 10mA, Safety Headroom: 300mV
-    ! Voltage: Min: 1.750V -> 2.850V, Max: 3.300V -> 2.850V
+      Voltage Min: 1.750V
+      Voltage Max: 3.300V
    LDO23 raw: 0a800c028c0a540b00000300
       Current Threshold: 10mA, Safety Headroom: 200mV
-    ! Voltage: Min: 2.700V -> 1.800V, Max: 2.900V -> 1.800V
-   LDO24 raw: 05c01202030c030c00000300
-      Current Threshold: 5mA, Safety Headroom: 300mV
-      Voltage: Min: 3.075V, Max: 3.075V
-   LDO25 raw: 05400642b004b00400000300
-      Current Threshold: 5mA, Safety Headroom: 100mV
-      Voltage: Min: 1.200V, Max: 1.200V
-   LDO26 raw: 0a4006427701e80300000300
-      Current Threshold: 10mA, Safety Headroom: 100mV
-      Voltage: Min: 0.375V, Max: 1.000V
-   LDO27 raw: 0a600902e803b00400000300
-      Current Threshold: 10mA, Safety Headroom: 150mV
-      Voltage: Min: 1.000V, Max: 1.200V
-   LDO28 raw: 0a90014a9d03e80300000300
-      Current Threshold: 10mA, Safety Headroom: 25mV
-      Voltage: Min: 0.925V, Max: 1.000V
+    ! Voltage Min: 2.700V -> 1.800V
+      Voltage Max: 2.900V
    LDO29 raw: 05900102be0a220b00000300
       Current Threshold: 5mA, Safety Headroom: 25mV
-    ! Voltage: Min: 2.750V -> 3.300V, Max: 2.850V -> 3.300V
-   LDO30 raw: 0ac012020807080700000300
-      Current Threshold: 10mA, Safety Headroom: 300mV
-      Voltage: Min: 1.800V, Max: 1.800V
-   LDO31 raw: 0a800c427701e80300000300
-      Current Threshold: 10mA, Safety Headroom: 200mV
-      Voltage: Min: 0.375V, Max: 1.000V
-   LDO32 raw: 0ad007020807080700000300
-      Current Threshold: 10mA, Safety Headroom: 125mV
-      Voltage: Min: 1.800V, Max: 1.800V
+    ! Voltage Min: 2.750V -> 1.750V
+    ! Voltage Max: 2.850V -> 3.300V
 
    Result of modified rpm: rpm_mod.img
    Search complete
